@@ -15,10 +15,12 @@ RUN mkdir -p /app/application/logs/
 # Add application jar
 ADD poc_config.jar /app/application/poc_config.jar
 
+RUN chmod 775 /app/application/poc_config.jar
+
 RUN sh -c 'touch /app/application/poc_config.jar'
 
 EXPOSE 8123
 
 
 
-ENTRYPOINT ["java","-jar","poc_config.jar"]
+ENTRYPOINT ["java","-jar","/app/application/poc_config.jar"]

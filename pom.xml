@@ -192,6 +192,9 @@
 				<configuration>
 					<serverId>docker-hub</serverId>
 					<registryUrl>https://cloud.docker.com/</registryUrl>
+					<username>saranteja7</username>
+					<password>saran7.me</password>
+					<useConfigFile>true</useConfigFile>
 				</configuration>
 			</plugin>
 			<plugin>

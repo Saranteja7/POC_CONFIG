@@ -182,11 +182,12 @@
 					</execution>
 				</executions>
 				<configuration>
+					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 <!--					<serverId>docker-hub</serverId>-->
 <!--					<registryUrl>https://hub.docker.com/</registryUrl>-->
-					<repository>https://hub.docker.com/</repository>
-					<username>saranteja7</username>
-					<password>saran7.me</password>
+<!--					<repository>https://hub.docker.com/</repository>-->
+<!--					<username>saranteja7</username>-->
+<!--					<password>saran7.me</password>-->
 				</configuration>
 			</plugin>
 			<plugin>

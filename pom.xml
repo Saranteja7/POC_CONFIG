@@ -166,8 +166,8 @@
 							<goal>tag</goal>
 						</goals>
 						<configuration>
-							<image>saranteja7/${image.name}:${project.version}</image>
-							<newName>saranteja7/${image.name}:${project.version}</newName>
+							<image>saranteja/${image.name}:${project.version}</image>
+							<newName>saranteja/${image.name}:${project.version}</newName>
 						</configuration>
 					</execution>
 					<execution>
@@ -176,15 +176,23 @@
 						<goals>
 							<goal>push</goal>
 						</goals>
-<!--						<configuration>-->
-<!--							<imageName>https://hub.docker.com/${image.name}:${project.version}</imageName>-->
-<!--						</configuration>-->
+						<configuration>
+							<imageName>saranteja/${image.name}:${project.version}</imageName>
+						</configuration>
 					</execution>
 				</executions>
-<!--				<configuration>-->
-<!--					<serverId>docker-hub</serverId>-->
-<!--					<registryUrl>https://hub.docker.com/u/</registryUrl>-->
+<!--				<server>-->
+<!--				<id>docker-hub</id>-->
+<!--				<username>ahmetkarakaya</username>-->
+<!--				<password>XXXXX</password>-->
+<!--				<configuration >-->
+<!--				<email>ahmet.krky@gmail.com</email>-->
 <!--				</configuration>-->
+<!--				</server>-->
+				<configuration>
+					<serverId>docker-hub</serverId>
+					<registryUrl>https://hub.docker.com/</registryUrl>
+				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>

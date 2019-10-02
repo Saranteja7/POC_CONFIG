@@ -181,17 +181,10 @@
 						</configuration>
 					</execution>
 				</executions>
-<!--				<server>-->
-<!--				<id>docker-hub</id>-->
-<!--				<username>ahmetkarakaya</username>-->
-<!--				<password>XXXXX</password>-->
-<!--				<configuration >-->
-<!--				<email>ahmet.krky@gmail.com</email>-->
-<!--				</configuration>-->
-<!--				</server>-->
 				<configuration>
 <!--					<serverId>docker-hub</serverId>-->
 <!--					<registryUrl>https://hub.docker.com/</registryUrl>-->
+					<repository>https://hub.docker.com/</repository>
 					<username>saranteja7</username>
 					<password>saran7.me</password>
 				</configuration>
@@ -218,7 +211,5 @@
 				</executions>
 			</plugin>
 		</plugins>
-
 	</build>
-
 </project>

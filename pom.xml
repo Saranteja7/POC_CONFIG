@@ -178,7 +178,7 @@
 						</goals>
 						<configuration>
 							<imageName>saranteja7/${image.name}:${project.version}</imageName>
-						</configuration>s
+						</configuration>
 					</execution>
 				</executions>
 <!--				<configuration>-->

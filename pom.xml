@@ -166,8 +166,8 @@
 							<goal>tag</goal>
 						</goals>
 						<configuration>
-							<image>saranteja/${image.name}:${project.version}</image>
-							<newName>saranteja/${image.name}:${project.version}</newName>
+							<image>saranteja7/${image.name}:${project.version}</image>
+							<newName>saranteja7/${image.name}:${project.version}</newName>
 						</configuration>
 					</execution>
 					<execution>
@@ -177,7 +177,7 @@
 							<goal>push</goal>
 						</goals>
 						<configuration>
-							<imageName>saranteja/${image.name}:${project.version}</imageName>
+							<imageName>saranteja7/${image.name}:${project.version}</imageName>
 						</configuration>
 					</execution>
 				</executions>
@@ -191,7 +191,7 @@
 <!--				</server>-->
 				<configuration>
 					<serverId>docker-hub</serverId>
-					<registryUrl>https://hub.docker.com/</registryUrl>
+					<registryUrl>https://cloud.docker.com/</registryUrl>
 				</configuration>
 			</plugin>
 			<plugin>

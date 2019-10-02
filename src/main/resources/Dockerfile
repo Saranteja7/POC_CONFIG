@@ -1,15 +1,9 @@
-#############################################################################
-FROM oneartifactory.verizon.com:8091/vzw/b6vv/orbpm/orbpm-centosopenjdk-baseimg:v1.0
-
-ARG jar_name=poc_config
-ARG version=1.0.0
-ARG packaging_type=jar
+FROM openjdk:8-jre-alpine
 
 
-####### MAINTAINER ############
 MAINTAINER "Saran Teja, Patnala" "v.n.v.saran.patnala@verizon.com"
 
-########################CREATE FOLDER STRUCTURE############################
+
 RUN mkdir -p /app/application/logs/
 
 # Add application jar

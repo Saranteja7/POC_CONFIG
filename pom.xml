@@ -20,12 +20,11 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Greenwich.SR3</spring-cloud.version>
 		<packaging.type>jar</packaging.type>
-        <image.base.path>dev</image.base.path>
         <docker.maven.plugin>0.4.13</docker.maven.plugin>
         <scm.maven.plugin>1.9.5</scm.maven.plugin>
 		<image.name>poc_config</image.name>
-		<orbpm.docker.registry>vzw/b6vv/poc</orbpm.docker.registry>
-		<docker.registry.baseurl>oneartifactory.verizon.com:8091</docker.registry.baseurl>
+<!--		<orbpm.docker.registry>vzw/b6vv/poc</orbpm.docker.registry>-->
+<!--		<docker.registry.baseurl>oneartifactory.verizon.com:8091</docker.registry.baseurl>-->
 	</properties>
 
 	<dependencies>
@@ -152,7 +151,7 @@
 						</goals>
 						<configuration>
 							<dockerDirectory>${project.basedir}/target/classes</dockerDirectory>
-							<imageName>test/${image.name}:${project.version}</imageName>
+							<imageName>saranteja7/${image.name}:${project.version}</imageName>
 							<buildArgs>
 								<jar_name>${project.artifactId}</jar_name>
 								<version>${project.version}</version>
@@ -167,8 +166,8 @@
 							<goal>tag</goal>
 						</goals>
 						<configuration>
-							<image>test/${image.name}:${project.version}</image>
-							<newName>${docker.registry.baseurl}/${orbpm.docker.registry}/${image.base.path}/${image.name}:${project.version}</newName>
+							<image>saranteja7/${image.name}:${project.version}</image>
+							<newName>https://hub.docker.com/${image.name}:${project.version}</newName>
 						</configuration>
 					</execution>
 					<execution>
@@ -178,13 +177,13 @@
 							<goal>push</goal>
 						</goals>
 						<configuration>
-							<imageName>${docker.registry.baseurl}/${orbpm.docker.registry}/${image.base.path}/${image.name}:${project.version}</imageName>
+							<imageName>https://hub.docker.com/${image.name}:${project.version}</imageName>
 						</configuration>
 					</execution>
 				</executions>
 				<configuration>
 					<serverId>docker-hub</serverId>
-					<registryUrl>https://${docker.registry.baseurl}/v2/</registryUrl>
+					<registryUrl>https://hub.docker.com/u/</registryUrl>
 				</configuration>
 			</plugin>
 			<plugin>

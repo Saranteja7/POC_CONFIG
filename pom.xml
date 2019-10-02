@@ -167,7 +167,7 @@
 						</goals>
 						<configuration>
 							<image>saranteja7/${image.name}:${project.version}</image>
-<!--							<newName>https://hub.docker.com/${image.name}:${project.version}</newName>-->
+							<newName>https://cloud.docker.com/${image.name}:${project.version}</newName>
 						</configuration>
 					</execution>
 					<execution>

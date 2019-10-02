@@ -167,7 +167,7 @@
 						</goals>
 						<configuration>
 							<image>saranteja7/${image.name}:${project.version}</image>
-							<newName>https://hub.docker.com/${image.name}:${project.version}</newName>
+<!--							<newName>https://hub.docker.com/${image.name}:${project.version}</newName>-->
 						</configuration>
 					</execution>
 					<execution>
@@ -177,14 +177,14 @@
 							<goal>push</goal>
 						</goals>
 						<configuration>
-							<imageName>https://hub.docker.com/${image.name}:${project.version}</imageName>
+<!--							<imageName>https://hub.docker.com/${image.name}:${project.version}</imageName>-->
 						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<serverId>docker-hub</serverId>
-					<registryUrl>https://hub.docker.com/u/</registryUrl>
-				</configuration>
+<!--				<configuration>-->
+<!--					<serverId>docker-hub</serverId>-->
+<!--					<registryUrl>https://hub.docker.com/u/</registryUrl>-->
+<!--				</configuration>-->
 			</plugin>
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>

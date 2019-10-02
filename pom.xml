@@ -182,6 +182,9 @@
 					</execution>
 				</executions>
 				<configuration>
+					<retryPushCount>1</retryPushCount>
+					<registryUrl>https://hub.docker.com</registryUrl>
+					<serverId>docker.io</serverId>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 <!--					<serverId>docker-hub</serverId>-->
 <!--					<registryUrl>https://hub.docker.com/</registryUrl>-->

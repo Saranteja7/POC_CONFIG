@@ -176,9 +176,9 @@
 						<goals>
 							<goal>push</goal>
 						</goals>
-						<configuration>
-							<imageName>saranteja7/${image.name}:${project.version}</imageName>
-						</configuration>
+<!--						<configuration>-->
+<!--							<imageName>https://hub.docker.com/${image.name}:${project.version}</imageName>-->
+<!--						</configuration>-->
 					</execution>
 				</executions>
 <!--				<configuration>-->
